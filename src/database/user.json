@@ -1,0 +1,27 @@
+   {
+     "imgURL": "https://cdn-icons-png.flaticon.com/512/6997/6997508.png",
+     "userName" : "Jacques Gluke",
+     "contacts": [
+       {
+         "tag": "jgluke",
+         "location": "Ocho Rios, Jamaica"
+       }
+     ],
+     "stats" :[
+       {
+         "label": "followers",
+         "quantity": 1000
+       },
+       {
+         "label": "Views",
+         "quantity": 2000
+       },
+       {
+         "label": "Likes",
+         "quantity": 3000
+       }
+     ]
+   }
+
+
+

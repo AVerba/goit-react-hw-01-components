@@ -1,16 +1,15 @@
-export const App = () => {
+
+import 'normalize.css';
+import {Profile} from './Profile'
+
+
+
+export const App = (data ) => {
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
+    <div>
       goit-react-hw-01-components
+      <Profile {...data}/>
     </div>
   );
 };

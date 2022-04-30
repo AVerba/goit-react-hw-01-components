@@ -1,15 +1,18 @@
 
 import 'normalize.css';
 import {Profile} from './Profile'
+import {Statistics} from './Statistic'
 
 
 
-export const App = (data ) => {
-
+export const App = ({data,statisticDB} ) => {
+console.log(statisticDB)
   return (
     <div>
-      goit-react-hw-01-components
       <Profile {...data}/>
+      <Statistics  {...statisticDB}/>
+
+
     </div>
   );
 };

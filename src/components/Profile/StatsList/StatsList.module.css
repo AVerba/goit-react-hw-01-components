@@ -1,5 +1,29 @@
 .statsList{
-  display:flex;
-  margin:0;
-  padding:0;
+  padding-left: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #c6cfc0;
+}
+.item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.quantity {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
 }

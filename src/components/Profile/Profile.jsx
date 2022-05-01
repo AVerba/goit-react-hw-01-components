@@ -1,19 +1,28 @@
-
+import PropTypes from "prop-types";
 import {Avatar} from './Avatar';
-import {UserContacts} from './UserContacts';
 import {StatsList} from "./StatsList";
 
 import style from './Profile.module.css'
 
-export const Profile = ({profile}) =>{
+export const Profile=({ username, tag, location, avatar, stats }) =>{
+
   return(
     <div className={style.profileItem}>
-      <Avatar imgURL={profile.imgURL} username={profile.username}/>
-      <div className={style.userName}>{profile.username}</div>
-      <UserContacts contacts={profile.contacts}/>
-      <StatsList stats={profile.stats}/>
+      <Avatar imgURL={avatar} username={username}/>
+      <div className={style.userName}>{username}</div>
+      <p className={style.tag}>@{tag}</p>
+      <p className={style.location}>{location}</p>
+      <StatsList stats={stats}/>
     </div>
   )
 }
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
+};
+
 
 

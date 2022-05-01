@@ -1,12 +1,20 @@
-import {StatsItem} from './StatsItem'
 import style from "../StatsList/StatsList.module.css";
 
 export const StatsList = ({stats}) => {
   return(
     <ul className={style.statsList}>
-      {
-        stats.map(({label,quantity}) =><StatsItem key={Math.floor(Math.random() * 100)} label={label} quantity={quantity}/>)
-      }
+      <li className={style.item}>
+        <span className={style.label}>Followers</span>
+        <span className={style.quantity}>{stats.followers}</span>
+      </li>
+      <li className={style.item}>
+        <span className={style.label}>Views</span>
+        <span className={style.quantity}> {stats.views}</span>
+      </li>
+      <li className={style.item}>
+        <span className={style.label}>Likes</span>
+        <span className={style.quantity}> {stats.likes}</span>
+      </li>
     </ul>
   )
 }

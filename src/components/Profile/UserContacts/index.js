@@ -1,1 +1,0 @@
-export {UserContacts} from './UserContacts';

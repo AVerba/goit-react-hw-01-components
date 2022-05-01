@@ -7,10 +7,10 @@ export const TableBody = (data) => {
     <tbody className={style.body}>
     {
       dataList.map(({id,type,amount,currency})=>
-        <tr key={id}>
-          <td>{type}</td>
-          <td>{amount}</td>
-          <td>{currency}</td>
+        <tr className={style.item} key={id}>
+          <td className={style.itemCell}>{type}</td>
+          <td className={style.itemCell}>{amount}</td>
+          <td className={style.itemCell}>{currency}</td>
         </tr>
       )
     }

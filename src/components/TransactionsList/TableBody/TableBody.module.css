@@ -1,0 +1,16 @@
+.item {
+  width:200px;
+
+
+}
+.itemCell {
+  width:200px;
+  margin:0 auto;
+  align-items: center;
+  padding:5px 0;
+  text-align:center;
+
+}
+.item:nth-child(2n){
+  background-color: #e6f0ef;
+}

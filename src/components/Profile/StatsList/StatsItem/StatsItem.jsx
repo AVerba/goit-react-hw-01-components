@@ -1,6 +1,7 @@
 import style from './StatsItem.module.css'
-export const StatsItem=({label,quantity})=>{
+import PropTypes from "prop-types";
 
+export const StatsItem=({label,quantity})=>{
   return (
     <li className={style.item}>
       <span>{label}</span>
@@ -8,3 +9,7 @@ export const StatsItem=({label,quantity})=>{
     </li>
   )
 }
+StatsItem.propTypes = {
+  label: PropTypes.string.isRequired,
+  quantity: PropTypes.number.isRequired,
+};

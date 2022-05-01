@@ -1,14 +1,17 @@
 import style from './TransactionsList.module.css'
+
 import {TableHead} from './TableHead'
 import {TableBody} from './TableBody'
 
-export const TransactionsList = (data) => {
+
+export const TransactionsList = ({transactions}) => {
 
   return (
     <table className={style.transactionHistory}>
       <TableHead/>
-      <TableBody {...data}/>
+      <TableBody transactionsData={transactions}/>
     </table>
 
   );
 }
+

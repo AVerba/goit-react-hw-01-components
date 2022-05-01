@@ -9,6 +9,6 @@ const friendsDB = require('./database/friends.json');
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App {...{data,statisticDB,transactions,friendsDB}} />
+    <App {{data,statisticDB,transactions,friendsDB}} />
   </React.StrictMode>
 );

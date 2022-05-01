@@ -8,7 +8,7 @@ import {FriendsList} from './FriedsList';
 
 
 
-export const App = ({data,statisticDB,transactions,friendsDB} ) => {
+export const App = ({data,statisticDB,transactions,friendsDB}) => {
 console.log(statisticDB)
   return (
     <div>

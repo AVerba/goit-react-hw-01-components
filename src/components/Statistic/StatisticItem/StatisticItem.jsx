@@ -1,5 +1,4 @@
 import style from './StatisticItem.module.css'
-import RandomHexColor from '../../../js/RandomHexColor'
 
 export const StatisticItem = ({label,percent}) => {
 

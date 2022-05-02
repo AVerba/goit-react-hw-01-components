@@ -1,9 +1,10 @@
-.avatarImg{
-  width:80px;
-  height:80px;
-  border-radius:50%;
-  margin-bottom:10px;
+.avatarImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
+
 .img {
   display: block;
   max-width: 100%;

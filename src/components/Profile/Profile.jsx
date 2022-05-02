@@ -4,9 +4,9 @@ import {StatsList} from "./StatsList";
 
 import style from './Profile.module.css'
 
-export const Profile=({ username, tag, location, avatar, stats }) =>{
+export const Profile = ({username, tag, location, avatar, stats}) => {
 
-  return(
+  return (
     <div className={style.profileItem}>
       <Avatar imgURL={avatar} username={username}/>
       <div className={style.userName}>{username}</div>
@@ -21,7 +21,11 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.object.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }),
 };
 
 

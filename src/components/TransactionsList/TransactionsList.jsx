@@ -11,7 +11,6 @@ export const TransactionsList = ({transactions}) => {
       <TableHead/>
       <TableBody transactionsData={transactions}/>
     </table>
-
   );
 }
 

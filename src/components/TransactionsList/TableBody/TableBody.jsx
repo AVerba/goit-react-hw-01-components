@@ -1,4 +1,4 @@
-import  style from './TableBody.module.css'
+import style from './TableBody.module.css'
 import PropTypes from "prop-types";
 
 export const TableBody = ({transactionsData}) => {
@@ -7,7 +7,7 @@ export const TableBody = ({transactionsData}) => {
   return (
     <tbody className={style.body}>
     {
-      transactionsData.map(({id,type,amount,currency})=>
+      transactionsData.map(({id, type, amount, currency}) =>
         <tr className={style.item} key={id}>
           <td className={style.itemCell}>{type}</td>
           <td className={style.itemCell}>{amount}</td>

@@ -1,8 +1,9 @@
-.head{
-  background-color:#34d8eb;
-  color:#fff;
+.head {
+  background-color: #34d8eb;
+  color: #fff;
 }
-.headCell{
-  width:200px;
-  padding:15px 0;
+
+.headCell {
+  width: 200px;
+  padding: 15px 0;
 }

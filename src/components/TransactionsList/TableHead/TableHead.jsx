@@ -1,4 +1,4 @@
-import  style from './TableHead.module.css'
+import style from './TableHead.module.css'
 
 export const TableHead = () => {
   return (

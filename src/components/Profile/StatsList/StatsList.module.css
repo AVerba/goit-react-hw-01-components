@@ -1,4 +1,4 @@
-.statsList{
+.statsList {
   padding-left: 10px;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -6,6 +6,7 @@
   justify-content: center;
   list-style: none;
 }
+
 .item {
   width: 100%;
   display: flex;
@@ -13,6 +14,7 @@
   align-items: center;
   color: #c6cfc0;
 }
+
 .item:not(:last-child) {
   margin-right: 20px;
 }

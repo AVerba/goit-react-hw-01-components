@@ -3,19 +3,17 @@ import PropTypes from 'prop-types';
 import style from './Statistics.module.css'
 
 
-
 export const Statistics = ({title, stats}) => {
-  const  StatisticTitle = title ? title: ' ';
   return (
     <div className={style.container}>
-      <h2 className="title">{StatisticTitle}</h2>
+      {title && <h2 className="title">{title}</h2>}
       <ul className={style.list}>
         {
-          stats.map(({id,label,percent}) =>
-            <StatisticItem  style={{
-              color:'red',
+          stats.map(({id, label, percentage}) =>
+            <StatisticItem style={{
+              color: 'red',
               backgroundColor: 'blue',
-            }} key={id} label={label} percent={percent}/>)
+            }} key={id} label={label} percentage={percentage}/>)
         }
       </ul>
     </div>

@@ -5,10 +5,10 @@ import style from './Statistics.module.css'
 
 
 export const Statistics = ({title, stats}) => {
-
+  const  StatisticTitle = title ? title: ' ';
   return (
     <div className={style.container}>
-      <h2 className="title">{title}</h2>
+      <h2 className="title">{StatisticTitle}</h2>
       <ul className={style.list}>
         {
           stats.map(({id,label,percent}) =>
